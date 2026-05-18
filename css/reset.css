@@ -1,0 +1,54 @@
+/* ═══════════════════════════════════════════
+   RESET
+═══════════════════════════════════════════ */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 72px;
+  /* Altura da navbar */
+
+  /* Suporte padrão de scrollbar moderna (Firefox e navegadores futuros) */
+  scrollbar-width: thin;
+  scrollbar-color: var(--cor-borda) var(--cor-fundo);
+}
+
+/* 🧭 PERSONALIZAÇÃO DE SCROLLBAR PREMIUM (Chrome, Edge, Safari e WebKit) */
+::-webkit-scrollbar {
+  width: 8px; /* Largura fina e sofisticada */
+  height: 8px; /* Altura fina para scroll horizontal */
+}
+
+::-webkit-scrollbar-track {
+  background: var(--cor-fundo); /* Fundo preto brutalista */
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(200, 192, 176, 0.25); /* Champagne/Gold translúcido */
+  border-radius: 0px; /* Bordas retas brutalistas */
+  border: 1px solid rgba(200, 192, 176, 0.1);
+  transition: background 0.3s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(200, 192, 176, 0.75); /* Destaque ao passar o mouse */
+}
+
+body {
+  background: var(--cor-fundo);
+  color: var(--cor-texto-claro);
+  font-family: var(--fonte-corpo);
+  overflow-x: hidden;
+  width: 100%;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
